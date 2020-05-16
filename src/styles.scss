@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0; 
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat';
+    font-size: 16px;
+}
+
+a, a:hover {
+    text-decoration: none;
+}

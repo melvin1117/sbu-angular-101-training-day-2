@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "sbu-angular-training": {
+    "covid-tracker-sbu-training": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/sbu-angular-training",
+            "outputPath": "dist/covid-tracker-sbu-training",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "sbu-angular-training:build"
+            "browserTarget": "covid-tracker-sbu-training:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "sbu-angular-training:build:production"
+              "browserTarget": "covid-tracker-sbu-training:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "sbu-angular-training:build"
+            "browserTarget": "covid-tracker-sbu-training:build"
           }
         },
         "test": {
@@ -114,15 +114,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "sbu-angular-training:serve"
+            "devServerTarget": "covid-tracker-sbu-training:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "sbu-angular-training:serve:production"
+              "devServerTarget": "covid-tracker-sbu-training:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "sbu-angular-training"
+  "defaultProject": "covid-tracker-sbu-training"
 }
